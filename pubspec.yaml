@@ -1,7 +1,6 @@
 name: timeconsuming_page_builder
 description: A time-consuming flutter page builder.
 version: 1.0.0
-author: Nikeo
 homepage: https://github.com/nikeorever/timeconsuming_page_builder
 
 environment:

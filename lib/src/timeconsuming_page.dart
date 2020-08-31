@@ -1,22 +1,16 @@
 part of timeconsuming_page_builder;
 
-///
 typedef RetryCaller = void Function();
 
-///
 typedef WaitingWidgetBuilder = Widget Function(BuildContext context);
 
-///
 typedef ErrorWidgetBuilder = Widget Function(
     BuildContext context, RetryCaller caller);
 
-///
 typedef DataWidgetBuilder<T> = Widget Function(BuildContext context, T data);
 
-///
 typedef FutureBuilder<T> = Future<T> Function();
 
-///
 class TimeConsumingPage<T> extends StatefulWidget {
   static AsyncWidgetBuilder<T> _asyncWidgetBuilder<T>({
     @required WaitingWidgetBuilder waitingWidgetBuilder,
