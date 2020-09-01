@@ -1,5 +1,6 @@
 part of timeconsuming_page_builder;
 
+/// Widget used to show waiting to the user.
 class BuiltInWaitingWidget extends StatefulWidget {
   BuiltInWaitingWidget({Key key, @required this.progressIndicatorValueColor})
       : super(key: key);
@@ -65,6 +66,7 @@ class _BuiltInWaitingWidgetState extends State<BuiltInWaitingWidget>
   }
 }
 
+/// Widget used to show error to the user.
 class BuiltInErrorWidget extends StatelessWidget {
   const BuiltInErrorWidget(
       {Key key, this.retryButtonText = 'retry', @required this.onRetryClick})
@@ -89,6 +91,8 @@ class BuiltInErrorWidget extends StatelessWidget {
   }
 }
 
+/// Widget used to show empty to user, indicates that no content is displayed
+/// to the user.
 class BuiltInEmptyWidget extends StatelessWidget {
   const BuiltInEmptyWidget({Key key, this.emptyText = 'empty content'})
       : super(key: key);

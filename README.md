@@ -2,13 +2,13 @@
 
 A time-consuming flutter page builder.
 
-## Usage
+##  Sample
 Use [dartrofit](https://pub.dev/packages/dartrofit) to request remote markdown resources, then display markdown on the page 
 using [Flutter Markdown](https://pub.dev/packages/flutter_markdown).
 ```dart
 import 'package:timeconsuming_page_builder/timeconsuming_page_builder.dart';
 
-TimeConsumingPage<ResponseBody>(
+TimeConsumingPageBuilder<ResponseBody>(
     futureBuilder: () => Api(dartrofit).getContent(path),
     waitingWidgetBuilder: (BuildContext context) =>
         BuiltInWaitingWidget(progressIndicatorValueColor: (BuildContext context) => AlwaysStoppedAnimation(Colors.teal)),
