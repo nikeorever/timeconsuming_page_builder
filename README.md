@@ -1,5 +1,7 @@
 # timeconsuming_page_builder
 
+[![pub package](https://img.shields.io/badge/pub-1.1.0-blueviolet.svg)](https://pub.dev/packages/timeconsuming_page_builder)
+
 A time-consuming flutter page builder.
 
 ##  Sample
